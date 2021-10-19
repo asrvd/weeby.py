@@ -1,5 +1,6 @@
 import weeby
 
-my_weeby = weeby.Weeby('your_token')
+my_weeby = weeby.Weeby('')
 
-print(my_weeby.get_json_response().random("roast")['response'])
+print(my_weeby.get_json_response().stats())
+
