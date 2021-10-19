@@ -6,7 +6,7 @@ API Wrapper in Python for WeebyAPI
 ```python
 import weeby
 
-my_weeby = weeby.Weeby('')
+my_weeby = weeby.Weeby(token="")
 
 
 my_weeby.get_json_response().random(type="") #Returns Random Response -> type (8ball, belikebill, dadjoke, geography, joke, roast)
