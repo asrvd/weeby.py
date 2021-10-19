@@ -1,0 +1,1 @@
+api_url = "https://weebyapi.xyz/"
