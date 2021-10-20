@@ -2,4 +2,6 @@
 API Wrapper in Python for WeebyAPI
 
 ## Import Statement
-`pip install weeby.py`
+```python
+pip install weeby.py`
+```
