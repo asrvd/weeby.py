@@ -1,15 +1,10 @@
 # weeby.py
-API Wrapper in Python for WeebyAPI
-Checkout WeebyAPI : https://weebyapi.xyz
-Get your API token here : https://weebyapi.xyz/discord
+API Wrapper in Python for WeebyAPI\
+Checkout WeebyAPI : https://weebyapi.xyz \
+Get your API token here : https://weebyapi.xyz/discord \
 Discord Bot using WeebyAPI : https://github.com/asheeeshh/Kanna-Chan
 
-<<<<<<< Updated upstream
 ## Import Statement
-```python
-pip install weeby.py
-=======
-## Importing Library
 ```python
 pip install weeby.py
 ```
@@ -37,7 +32,8 @@ my_weeby.get_json_response().meme(type="meme") # Returns List with Image URL and
 my_weeby.get_json_response().word(type="random") # Returns random word or list of words
 
 # Lyrics
-my_weeby.get_json_response().lyrics(track="6 months by john k") # Returns Lyrics of the song (JSON Response)
+my_weeby.get_json_response().lyrics(track="6 months by john k") 
+# Returns Lyrics of the song (JSON Response)
 
 # WeebyAPI Stats
 my_weeby.get_json_response().stats() # Return JSON with stats of WeebyAPI
@@ -52,36 +48,46 @@ from io import BytesIO
 my_weeby = weeby.Weeby('your_weebyAPI_token_goes_here')
 
 # General Effects
-# Types available -> blur, contrast, edge, greyscale, invert, pixelize, sepia, sharpen, silhouette, threshold, blurple, invertedthreshold, invertedgreyscale
-# Returns Image Buffer
-# Image type -> .png/.jpg/.gif
+'''
+Types available -> blur, contrast, edge, greyscale, invert, pixelize, sepia, sharpen, 
+silhouette, threshold, blurple, invertedthreshold, invertedgreyscale
+Returns Image Buffer
+Image type -> .png/.jpg/.gif
+'''
 image = my_weeby.apply_effect().general(image_url="your_image_url", type="greyscale")
 im = Image.open(BytesIO(image))
 im.save("generated.png")
 
 # Intensity Effects
-# Types avaialable -> brightness, darkness, distort
-# Returns Image Buffer
-# Image type -> .png/.jpg/.gif
-image = my_weeby.apply_effect().intensity(image_url="your_image_url", type="darkness", intensity=50)
+'''
+Types avaialable -> brightness, darkness, distort
+Returns Image Buffer
+Image type -> .png/.jpg/.gif
+'''
+image = my_weeby.apply_effect().intensity(image_url="your_image_url", type="darkness", 
+intensity=50)
 im = Image.open(BytesIO(image))
 im.save("generated.png")
 
 # Level Effects
-# Types avaialable -> fisheye, desaturate
-# Returns Image Buffer
-# Image type -> .png/.jpg/.gif
-image = my_weeby.apply_effect().intensity(image_url="your_image_url", type="desaturate", level=10)
+'''
+Types avaialable -> fisheye, desaturate
+Returns Image Buffer
+Image type -> .png/.jpg/.gif
+'''
+image = my_weeby.apply_effect().intensity(image_url="your_image_url", type="desaturate",
+level=10)
 im = Image.open(BytesIO(image))
 im.save("generated.png")
 
 # Resize Image (Limit: 1-2000 for both width and height)
-# Returns Image Buffer
-# Image type -> .png/.jpg/.gif
+''' 
+Returns Image Buffer
+Image type -> .png/.jpg/.gif
+'''
 image = my_weeby.apply_effect().intensity(image_url="your_image__url", width=200, height=200)
 im = Image.open(BytesIO(image))
 im.save("generated.png")
->>>>>>> Stashed changes
 ```
 
 ## Using Overlays Method
@@ -93,7 +99,8 @@ from io import BytesIO
 my_weeby = weeby.Weeby('your_weebyAPI_token_goes_here')
 
 '''
-Types of Overlays available :approved, bazinga, caution, christmas, easter, fire, glass, halloween, hearts, jail, rainbow, rejected, simp, snow, thuglife, balance, brilliance, bravery
+Types of Overlays available :approved, bazinga, caution, christmas, easter, fire, glass, 
+halloween, hearts, jail, rainbow, rejected, simp, snow, thuglife, balance, brilliance, bravery
 
 Image Type: .jpg/.png/.gif
 
@@ -109,7 +116,12 @@ im.save("generated.png)
 import weeby
 
 '''
-Types of GIF available: akko, angry, baka, bath, boom, boop, beer, bite, blush, bonk, bored, cheer, chase, clap, confused, cookie, cringe, cry, cuddle, dab, dance, facepalm, feed, flower, fly, gabriel, glomp, grin, happy, hate, handhold, highfive, hug, icecream, kick, kiss, laugh, lick, love, lurk, miyano, nervous, no, nom, nuzzle, panic, pat, pikachu, poke, pout, punch, rawr, run, sagiri, shrug, sip, slap, sleepy, smug, stare, sword, tease, teleport, think, throw, thumbs, tickle, triggered, wag, wave, wedding, wink, yes, zerotwo
+Types of GIF available: akko, angry, baka, bath, boom, boop, beer, bite, blush, bonk, bored,
+cheer, chase, clap, confused, cookie, cringe, cry, cuddle, dab, dance, facepalm, feed, flower, 
+fly, gabriel, glomp, grin, happy, hate, handhold, highfive, hug, icecream, kick, kiss, laugh, lick, 
+love, lurk, miyano, nervous, no, nom, nuzzle, panic, pat, pikachu, poke, pout, punch, rawr, 
+run, sagiri, shrug, sip, slap, sleepy, smug, stare, sword, tease, teleport, think, throw, 
+thumbs, tickle, triggered, wag, wave, wedding, wink, yes, zerotwo
 
 Returns : GIF URL
 '''
