@@ -1,7 +1,7 @@
 # weeby.py
 API Wrapper in Python for WeebyAPI
 
-<h2>JSON RESPONSES</h2>
+## JSON RESPONSES
 
 ```python
 import weeby
