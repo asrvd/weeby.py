@@ -4,7 +4,7 @@ Checkout WeebyAPI : https://weebyapi.xyz \
 Get your API token here : https://weebyapi.xyz/discord \
 Discord Bot using WeebyAPI : https://github.com/asheeeshh/Kanna-Chan
 
-## Import Statement
+## Installation
 ```python
 pip install weeby.py
 ```
