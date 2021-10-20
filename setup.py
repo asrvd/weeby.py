@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="weeby.py",                     
-    version="0.0.2",                        
+    version="0.0.3",                        
     author="Ashish Bhushan",                     
     author_email="asheeshh09@gmail.com",
     description="API wrapper library for WeebyAPI",
