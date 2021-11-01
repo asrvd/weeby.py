@@ -128,4 +128,166 @@ Returns : GIF URL
 my_weeby.get_gif().gif(type="baka")
 ```
 
-## Generator Method Coming Soon ♥
+## Generator Method
+```python
+import weeby
+
+my_weeby = weeby.Weeby('your_weebyAPI_token_goes_here')
+
+# One Image
+'''
+Types Available: 3000years, airpods, amiajoke, bad, beautiful,
+berniemittens, bobross, challenger, delet, dexter, fear, garbage, heman, jokeoverhead, painting, patrick, photograph, picture, respect, sacred, thumbs, tobecontinued, truth, wanted, wedontdothathere, whodidthis, worthless, leonardopointing, jojoshock, hot, soraselfie, helivesinyou, stonks, mycollectiongrows, tableflip, tattoo, leonardoglass, standingkitty, rickripswall, wynaut, berniefinancialsupport, vsaucecomputer, waitthatsillegal
+
+Image type: .gif/.png/.jpg
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().one_image(type="", url="")
+
+# Two Images
+'''
+Types Available: batslap, bed, crush, cuddle, dwightscared, hug, nani, peterglasses, samepicture, ship, whowouldwin, expectreality, amogus
+
+Image Type: .gif/.png/.jpg
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().two_image(type="", url1="", url2="")
+
+# Text
+'''
+Types Available: belikebill, clyde, hollywoodstar
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().text(type="", text="")
+
+# Two Text
+'''
+Types Available: drakeposting, spiderman, twobuttons, tuxedopooh, icarly
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().two_text(type="", text1="", text2="")
+
+# Image & Text
+'''
+Types Avilable: achievement, bartchalkboard, changemymind, lisapresentation, jimwhiteboard
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().image_text(type="", url="", text="")
+
+# Eject
+'''
+url: link to the image -> .gif/.png/.jpg
+text: name/username of the user
+outcome: imposter/notimposter/ejected
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().eject(url="", text="", outcome="")
+
+# Friendship
+'''
+url1: link to first image -> .gif/.png/.jpg
+url2: link to second image -> .gif/.png/.jpg
+text1: name of first user
+text2: name of second user
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().friendship(url1="", url2="", text1="", text2="")
+
+# Demotivational
+'''
+url: link to image -> .gif/.png/.jpg
+title: title -> str
+text: text -> str
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().demotivational(url="", title="", text="")
+
+# RIP
+'''
+url: link to image -> .gif/.png/.jpg
+name: name of the user
+message: text to display
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().rip(url="", name="", message="")
+
+# Tweet
+'''
+url: link to image -> /gif/.png/.jpg
+name: name of the user
+text: text to display
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().tweet(url="", name="", text="")
+
+# Tweet Fetch
+'''
+name: name of the user
+text: text to display
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().tweet_fetch(name="", text="")
+
+# Triggered
+'''
+url: link to image -> .gif/.png/.jpg
+tint: bool -> True/False
+
+Returns: Image Buffer (gif)
+'''
+buffer = my_weeby.generate().triggered(url="", tint=True)
+
+# Currency
+'''
+type: type of currency | dollar, euro, pound, yen
+amount: amount -> int
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().currency(type="", amount=10)
+
+# Color
+'''
+hex: hex code of color without the '#'
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().color(hex="")
+
+# This is Spotify
+'''
+url: link to image -> .gif/.png/.jpg
+hex: hex code of color without the '#'
+text: text to display
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().spotify(url="", hex="", text="")
+
+# Spotify Now Playing
+'''
+url: link to image -> .gif/.png/.jpg
+title: title of song 
+artist: artist name
+album: album name
+
+Returns: Image Buffer
+'''
+buffer = my_weeby.generate().spotifynp(url="", title="", artist="", album="")
+```
+
+## Ending Note
+
+- Consider leaving a ⭐ if you found this library helpful.
+- Follow me ***[here](https://github.com/asheeeshh)***
+- Contributions to the project are most welcome!
+- Feel free to fork this repo and contribute.
+- Thank You!
+

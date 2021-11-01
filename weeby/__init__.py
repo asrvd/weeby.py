@@ -4,6 +4,7 @@ from .json_response import JSON
 from .effects import Image
 from .overlays import Overlay
 from .media import Gif
+from .generators import Generator
 
 class Weeby:
     def __init__(self, token: str) -> None:
@@ -20,3 +21,6 @@ class Weeby:
 
     def get_gif(self) -> Gif:
         return Gif(self.token)
+
+    def generate(self) -> Generator:
+        return Generator(self.token)

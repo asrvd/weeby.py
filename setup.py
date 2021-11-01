@@ -1,13 +1,13 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding="utf8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="weeby.py",                     
-    version="0.0.6",                        
+    version="0.1.6",                        
     author="Ashish Bhushan",                     
-    author_email="asheeshh09@gmail.com",
+    author_email="asheeshh9@gmail.com",
     description="API wrapper library for WeebyAPI",
     long_description=long_description,      
     long_description_content_type="text/markdown",
