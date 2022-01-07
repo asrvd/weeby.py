@@ -11,7 +11,7 @@ pip install weeby.py
 
 ## Installation `0.1.0`
 ```python
-oip install git+https://github.com/asheeeshh/weeby.py
+pip install git+https://github.com/asheeeshh/weeby.py
 ```
 
 ## Using JSON Response method
